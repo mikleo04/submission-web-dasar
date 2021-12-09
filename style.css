@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 auto;
+    padding: 0px ;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: rgba(19, 166, 153, 0.9);
+    height: 65px;
+    position: fixed;
+    top: 0 ;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    float: left;
+    margin: 10px 20px 0px 20px;
+    font-family: 'Pacifico', fantasy;
+    color: white;
+}
+
+nav{
+    float: left;
+    margin-left: 325px;
+    margin-top: 10px;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.login {
+    float: right;
+    margin: 0px 20px;
+    background-color: rgba(225, 225, 225, 0.3);
+}
+.login a {
+    line-height: 65px;
+    display: block;
+    padding: 0px 25px;
+}
+
+.login a:hover {
+    background-color: rgba(225, 225, 225, 0.5);
+    transition: all 0.7s;
+}
+
+/* main */
+main {
+    overflow: auto;
+    background-color: #FFF7ED;
+}
+
+#jam {
+    font-family: 'Pacifico', sans-serif;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(76, 119, 119, 0.2);
+    border-radius: 50%;
+    padding: 20px;
+}
+.jumbotron {
+    background-image: url(asets/gambar/pulau.png);
+    background-size: cover;
+    padding: 280px 0px 100px 0px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.jumbotron h4 {
+    opacity: 0.9;
+}
+
+.btn-wrapper {
+    margin-top: 80px
+}
+
+.btn {
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    opacity: 0.7;
+    display: inline-block;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.whatsapp {
+    background-color: #239b76;
+}
+
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+.card {
+    width: 75%;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 0px 20px 40px 20px;
+    margin: 20px 0px;
+    border-radius: 4px;
+}
+.card p {
+    text-align: justify;
+    margin-bottom:  40px;
+}
+
+.card a {
+    background-color: rgba(19, 166, 153, 0.6);
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.card a:hover{
+    background-color: rgba(19, 166, 153, 0.9);
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+   object-position: center;
+}
+aside {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0px;
+
+}
+
+.profile {
+    flex-grow: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0px 10px;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+}
+
+figure img {
+    max-height: 100px;
+}
+
+.call {
+    padding: 10px 10px;
+    background-color: rgba(19, 166, 153, 0.8);
+    cursor: pointer;
+    box-shadow: 0 7px rgb(19, 166, 153);
+    border-radius: 8px;
+}
+
+.call:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.message {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    background-image: url(asets/gambar/pesan.png);
+    padding:10px 0px 20px 0px;
+}
+
+.message h3 {
+    font-size: 2em;
+}
+
+.head, .input {
+    margin-left: 40%;
+}
+
+input, select, textarea {
+    border: none;
+    opacity: 0.5;
+}
+.submit {
+    margin-left: 27%;
+    padding: 8px;
+    background-color: rgba(19, 166, 153, 0.7);
+}
+
+.submit:hover {
+    background-color: rgba(19, 166, 153, 0.9);
+}
+
+footer {
+    background-color: rgb(19, 166, 153);
+    padding: 30px 0px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#logo{
+    font-family: 'Pacifico', fantasy;
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        margin: 0px
+    }    
+    .card {
+        width: 100%;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+    .head, .input {
+        margin-left: 5%;
+    }
+    nav {
+        display: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .facebook {
+        margin-bottom: 10px;
+    }
+    .profile {
+        margin-bottom: 10px;
+    }
+
+}
